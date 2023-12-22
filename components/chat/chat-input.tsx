@@ -13,10 +13,10 @@ import {
   FormControl,
   FormField,
   FormItem,
-} from "@/components/ui/form";
-import { Input } from "../../components/ui/input";
+} from "../ui/form";
+import { Input } from "../ui/input";
 import { useModal } from "../../hooks/use-modal-store";
-import { EmojiPicker } from "../../components/emoji-picker";
+import { EmojiPicker } from "../emoji-picker";
 
 interface ChatInputProps {
   apiUrl: string;

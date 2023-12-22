@@ -26,8 +26,8 @@ model Profile {
 model Server {
   id String @id @default(uuid()) @map("_id")
   name String
-  imageUrl String 
-  inviteCode String @unique
+  imageUrl String?
+  inviteCode String? @unique
 
   profileId String
   profile Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
